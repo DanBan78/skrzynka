@@ -1,0 +1,23 @@
+feat: Arduino interactive monster box - sensor-controlled servo animations
+
+🎭 Interactive toy system for Arduino Nano:
+Monster pops out of trash can when obstacle detected by VL53L0X sensor.
+Two servo motors control "hand" and "monster" movements with synchronized LED effects.
+
+🎯 Features:
+- Laser distance sensor (VL53L0X) detects objects < 8cm
+- 6 different monster animation sequences with varying speeds
+- Synchronized LED lighting (green=calm, red=scary)
+- Debounced detection requiring 8 consecutive measurements
+- Advanced servo control with configurable movement speeds
+- Memory-optimized design using PROGMEM for sequence data
+
+🔧 Hardware:
+- Arduino Nano (ATmega328P)
+- VL53L0X laser distance sensor (I2C)
+- 2x servo motors for animated movement
+- 2x LEDs (green/red) for visual effects
+- Optimized for stable operation within 2KB RAM limit
+
+🎮 Operation:
+Wave hand near sensor → Monster jumps out with scary effects → Returns to hiding after sequence
